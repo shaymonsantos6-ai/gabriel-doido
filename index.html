@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gabriel Henrique · Portfólio</title>
+  <meta name="description" content="Portfólio de Gabriel Henrique: empreendedor em marketing e estudante de Análise e Desenvolvimento de Sistemas na UDF.">
+  <meta name="author" content="Gabriel Henrique Gomes Miranda">
+  <meta name="theme-color" content="#E4E3D3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121A15" media="(prefers-color-scheme: dark)">
+
+  <!-- Prévia ao compartilhar o link (WhatsApp, LinkedIn etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gabriel Henrique · Portfólio">
+  <meta property="og:description" content="Empreendedor, estudante de tecnologia e apaixonado por novos desafios.">
+  <meta property="og:image" content="assets/foto.jpg">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234F7A5A'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-weight='700' font-size='30' fill='%23F5F4EA'%3EGH%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Aplica o tema salvo antes de desenhar a página (evita "piscar") -->
+  <script>
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    document.documentElement.classList.add('js');
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="#inicio" aria-label="Gabriel Henrique, voltar ao início">
+        <span class="logo-mark" aria-hidden="true">GH</span>
+        <span class="logo-text">Gabriel Henrique</span>
+      </a>
+
+      <nav id="menu" class="nav" aria-label="Principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#foco">Foco</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Alternar tema claro/escuro">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ===== INÍCIO ===== -->
+    <section class="hero" id="inicio">
+      <div class="wrap">
+        <div class="hero-text">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Marketing · Tecnologia · Empreendedorismo</p>
+          <h1>Olá, eu sou <span class="hl">Gabriel Henrique.</span></h1>
+          <p class="sub">Empreendedor, estudante de tecnologia e apaixonado por <span class="rotator" aria-live="polite">novos desafios</span>.</p>
+          <p class="lead">Estou construindo minha trajetória profissional unindo empreendedorismo, tecnologia e marketing. Acredito que grandes resultados começam com dedicação, visão e vontade de evoluir.</p>
+          <div class="btns">
+            <a class="btn main" href="#sobre">Conheça minha trajetória
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+            <a class="btn ghost" href="#contato">Entre em contato</a>
+          </div>
+        </div>
+
+        <div class="photo">
+          <div class="frame">
+            <!-- Para trocar a foto: substitua o arquivo assets/foto.jpg -->
+            <img src="assets/foto.jpg" alt="Foto de Gabriel Henrique" width="480" height="600" fetchpriority="high">
+          </div>
+          <div class="badge glass" aria-hidden="true">
+            <strong data-count="1">0</strong>
+            <span>ano de estrada<br>e aprendizado</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#sobre" aria-label="Rolar para Sobre mim"><span></span></a>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre">
+      <div class="wrap">
+        <p class="kicker reveal">01 — Quem sou</p>
+        <h2 class="reveal">Sobre mim</h2>
+        <div class="about">
+          <div class="reveal">
+            <p>Sou <strong>Gabriel Henrique Gomes Miranda</strong>. Há um ano trabalho como motorista de aplicativo na Uber, e é na estrada que aprendo, todos os dias, a lidar com pessoas, organizar meu tempo e manter a constância até nos dias mais difíceis.</p>
+            <p>Essa rotina me deu uma visão prática de trabalho e de responsabilidade, e foi ela que me levou a querer mais: hoje estou estruturando minha própria empresa na área de marketing.</p>
+            <p>Em paralelo, estudo Análise e Desenvolvimento de Sistemas na UDF. Quero unir o que aprendo sobre tecnologia ao que vivo como empreendedor, para crescer profissionalmente e fazer meu negócio crescer junto.</p>
+          </div>
+          <aside class="glass-card summary reveal" aria-label="Resumo">
+            <dl>
+              <div><dt>Formação</dt><dd>Análise e Desenvolvimento de Sistemas, UDF</dd></div>
+              <div><dt>Área de atuação</dt><dd>Marketing</dd></div>
+              <div><dt>Agora</dt><dd>Estruturando minha própria empresa</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOCO ===== -->
+    <section id="foco">
+      <div class="wrap">
+        <p class="kicker reveal">02 — No que me dedico</p>
+        <h2 class="reveal">Três frentes, um caminho</h2>
+        <div class="pillars">
+          <article class="glass-card pillar reveal">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 11l18-7-7 18-2-8-9-3Z"/></svg>
+            </div>
+            <h3>Marketing</h3>
+            <p>Construindo minha empresa na área, aprendendo na prática a gerar valor e resultado para clientes.</p>
+          </article>
+          <article class="glass-card pillar reveal">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+            </div>
+            <h3>Tecnologia</h3>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas na UDF, levando lógica e ferramentas digitais para o negócio.</p>
+          </article>
+          <article class="glass-card pillar reveal">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7L12 3Z"/></svg>
+            </div>
+            <h3>Empreendedorismo</h3>
+            <p>Disciplina, constância e visão de longo prazo, aprendidas no dia a dia e aplicadas em cada passo.</p>
+          </article>
+        </div>
+
+        <ul class="chips reveal" aria-label="Competências">
+          <li>Atendimento ao público</li>
+          <li>Comunicação</li>
+          <li>Organização e gestão do tempo</li>
+          <li>Responsabilidade</li>
+          <li>Constância</li>
+          <li>Resolução de problemas</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIÊNCIA ===== -->
+    <section id="experiencia">
+      <div class="wrap">
+        <p class="kicker reveal">03 — Trajetória</p>
+        <h2 class="reveal">Experiência profissional</h2>
+        <ol class="timeline">
+          <li class="now reveal">
+            <article class="glass-card card">
+              <span class="tag"><span class="dot" aria-hidden="true"></span> Em andamento</span>
+              <h3>Empreendedor, marketing</h3>
+              <p>Estruturando minha própria empresa na área de marketing, com foco em construir uma base sólida para crescer.</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="glass-card card">
+              <span class="tag">1 ano de experiência</span>
+              <h3>Motorista de aplicativo, Uber</h3>
+              <p>Atendimento direto ao público, organização da própria rotina e responsabilidade diária com o trabalho.</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="glass-card card">
+              <span class="tag">Em curso</span>
+              <h3>Análise e Desenvolvimento de Sistemas, UDF</h3>
+              <p>Formação em tecnologia para unir desenvolvimento de sistemas ao crescimento do meu negócio.</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="contact">
+      <div class="wrap">
+        <div class="contact-box glass-card reveal">
+          <p class="kicker">04 — Vamos conversar</p>
+          <h2>Tem um projeto ou uma oportunidade?</h2>
+          <p class="lead">Fico feliz em trocar uma ideia sobre marketing, tecnologia ou parcerias.</p>
+
+          <!--
+            EDITE AQUI: troque os links abaixo pelos seus dados.
+            - E-mail:    mailto:seuemail@exemplo.com
+            - WhatsApp:  https://wa.me/5561999999999   (55 + DDD + número, só dígitos)
+            - LinkedIn:  https://www.linkedin.com/in/seu-usuario
+            - Instagram: https://www.instagram.com/seu-usuario
+            Se não quiser algum, apague o <a> inteiro.
+          -->
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:seuemail@exemplo.com" data-copy="seuemail@exemplo.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span>E-mail</span>
+            </a>
+            <a class="contact-link" href="https://wa.me/5561999999999" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4.1A8 8 0 1 1 20 12Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a3.5 3.5 0 0 1-1.8-1.8l.8-1-1-2L9 9.5Z"/></svg>
+              <span>WhatsApp</span>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a class="contact-link" href="https://www.instagram.com/seu-usuario" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5v.01"/></svg>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span id="ano">2026</span> Gabriel Henrique Gomes Miranda</span>
+      <a href="#inicio" class="to-top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
